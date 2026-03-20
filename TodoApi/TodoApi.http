@@ -9,7 +9,7 @@ POST {{TodoApi_HostAddress}}/api/todoitems
 Content-Type: application/json
 
 {
-  "name": "play tennis",
+  "name": "play football",
   "isComplete": false
 }
 
@@ -21,5 +21,22 @@ GET {{TodoApi_HostAddress}}/api/todoitems
 
 @id=3
 GET {{TodoApi_HostAddress}}/api/todoitems/{{id}}
+
+###
+
+@id=2
+PUT {{TodoApi_HostAddress}}/api/todoitems/{{id}}
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "play hockey",
+  "isComplete": true
+}
+
+###
+
+@id=1
+DELETE {{TodoApi_HostAddress}}/api/todoitems/{{id}}
 
 ###
