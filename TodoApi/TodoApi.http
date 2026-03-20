@@ -10,7 +10,8 @@ Content-Type: application/json
 
 {
   "name": "play football",
-  "isComplete": false
+  "isComplete": false,
+  "secret": "yes"
 }
 
 ###
